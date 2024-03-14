@@ -1,33 +1,61 @@
 .footer {
-    position: relative;
-    margin: 0px;
-    background-color: #f5f5f5;
-    padding: 0px;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: left;
-    margin: 10px;
-  }
-  
+  background-color: #486a5d;
+  color: #fff;
+  position: relative;
+  margin: 0px;
+  /*background-color: #f5f5f5;*/
+  padding: 40px 0px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sub div {
+  width: 20%;
+}
+
+.sub p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  /*margin-top: 10px;*/
+  font-size: 2rem;
+  display: flex;
+}
+
+.social-icons svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  fill: #fff;
+}
+
+.social-icons svg:hover {
+  fill: #007bff;
+}
+
+.follow {
+  margin-left: 2px;
+}
+
+@media screen and (max-width: 720px) {
   .sub {
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
-  
-  .sub p {
-    margin: 5px;
-  }
-  .social-icons{
-    font-size: 2rem;
-  }
-  
-  @media screen and (max-width: 720px) {
-    .sub {
-      flex-direction: column;
-    }
-  }
-  
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {
   AiFillFacebook,
   AiFillTwitterCircle,
   AiFillInstagram,
   AiFillApple,
 } from "react-icons/ai";
-import { FaGooglePlay } from "react-icons/fa";
+import {FaGooglePlay} from "react-icons/fa";
 import "../styles/footer.css";
 import logo from "../assets/logo.png";
 
@@ -60,19 +60,26 @@ const Footer = () => {
               <p>Security</p>
               <p>Terms</p>
             </div>
+          </div>
+          <hr />
+          <div className="row sub">
+            <div className="col">
+              <p>&#169; 2024 MarketHUB. All Copyrights Reserved.</p>
+            </div>
             <div>
-              <b>Social links</b>
+              <b className="follow">FOLLOW US</b>
               <div className="social-icons">
-                <AiFillFacebook />
-                <AiFillTwitterCircle />
-                <AiFillInstagram />
+                <Link to={"https://facebook.com"}><AiFillFacebook /></Link>
+                <Link to={"https://twitter.com"}><AiFillTwitterCircle /></Link>
+                <Link to={"https://instagram.com"}><AiFillInstagram /></Link>
               </div>
               <div className="social-icons">
-                <AiFillApple />
-                <FaGooglePlay />
+                <Link to={"https://itunes.apple.com"}><AiFillApple /></Link>
+                <Link to={"https://play.google.com"}><FaGooglePlay /></Link>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
