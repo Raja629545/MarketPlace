@@ -33,6 +33,7 @@
   margin: 5px 0;
 }
 
+
 .social-icons {
   /*margin-top: 10px;*/
   font-size: 2rem;
@@ -47,7 +48,7 @@
 }
 
 .social-icons svg:hover {
-  fill: #007bff;
+  fill: #163c64;
 }
 
 .follow {
